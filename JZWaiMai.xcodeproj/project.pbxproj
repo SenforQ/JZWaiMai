@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD75DA2BD4AA7EBA6C6E84E8 /* libPods-JZWaiMai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6F2F20CAF4E7F6DE42687D /* libPods-JZWaiMai.a */; };
+		E60458021FDE85B600C507A7 /* JZShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60458011FDE85B600C507A7 /* JZShopController.m */; };
+		E60458051FDE85E100C507A7 /* JZFoodDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60458041FDE85E100C507A7 /* JZFoodDetailController.m */; };
+		E60458091FDE8E9000C507A7 /* JZMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60458081FDE8E9000C507A7 /* JZMainController.m */; };
+		E604580C1FDEA4C500C507A7 /* JZBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = E604580B1FDEA4C500C507A7 /* JZBaseController.m */; };
+		E62D4DD21FE7EC6C006ADC0D /* JZShopOrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DD11FE7EC6C006ADC0D /* JZShopOrderController.m */; };
+		E62D4DD51FE7EC7B006ADC0D /* JZShopInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DD41FE7EC7B006ADC0D /* JZShopInfoViewController.m */; };
+		E62D4DD81FE7EC88006ADC0D /* JZShopCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DD71FE7EC88006ADC0D /* JZShopCommentViewController.m */; };
+		E62D4DDE1FE86849006ADC0D /* UIColor+JZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DDD1FE86849006ADC0D /* UIColor+JZAddition.m */; };
+		E66B6E201FD85FDA00AC80FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E1F1FD85FDA00AC80FC /* main.m */; };
+		E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E221FD85FDA00AC80FC /* AppDelegate.m */; };
+		E66B6E2B1FD85FDA00AC80FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */; };
+		E66B6E2E1FD85FDA00AC80FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66B6E2C1FD85FDA00AC80FC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E6F2F20CAF4E7F6DE42687D /* libPods-JZWaiMai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JZWaiMai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		641EFB0945A304FAE208641A /* Pods-JZWaiMai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZWaiMai.release.xcconfig"; path = "Pods/Target Support Files/Pods-JZWaiMai/Pods-JZWaiMai.release.xcconfig"; sourceTree = "<group>"; };
+		85EF6B88780C22E235487956 /* Pods-JZWaiMai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZWaiMai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JZWaiMai/Pods-JZWaiMai.debug.xcconfig"; sourceTree = "<group>"; };
+		E60457FD1FDE7B3C00C507A7 /* JZWaiMaiPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZWaiMaiPrefixHeader.pch; sourceTree = "<group>"; };
+		E60458001FDE85B600C507A7 /* JZShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopController.h; sourceTree = "<group>"; };
+		E60458011FDE85B600C507A7 /* JZShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopController.m; sourceTree = "<group>"; };
+		E60458031FDE85E100C507A7 /* JZFoodDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFoodDetailController.h; sourceTree = "<group>"; };
+		E60458041FDE85E100C507A7 /* JZFoodDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFoodDetailController.m; sourceTree = "<group>"; };
+		E60458071FDE8E9000C507A7 /* JZMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainController.h; sourceTree = "<group>"; };
+		E60458081FDE8E9000C507A7 /* JZMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainController.m; sourceTree = "<group>"; };
+		E604580A1FDEA4C500C507A7 /* JZBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZBaseController.h; sourceTree = "<group>"; };
+		E604580B1FDEA4C500C507A7 /* JZBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZBaseController.m; sourceTree = "<group>"; };
+		E62D4DD01FE7EC6C006ADC0D /* JZShopOrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopOrderController.h; sourceTree = "<group>"; };
+		E62D4DD11FE7EC6C006ADC0D /* JZShopOrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopOrderController.m; sourceTree = "<group>"; };
+		E62D4DD31FE7EC7B006ADC0D /* JZShopInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopInfoViewController.h; sourceTree = "<group>"; };
+		E62D4DD41FE7EC7B006ADC0D /* JZShopInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopInfoViewController.m; sourceTree = "<group>"; };
+		E62D4DD61FE7EC88006ADC0D /* JZShopCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopCommentViewController.h; sourceTree = "<group>"; };
+		E62D4DD71FE7EC88006ADC0D /* JZShopCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopCommentViewController.m; sourceTree = "<group>"; };
+		E62D4DDC1FE86849006ADC0D /* UIColor+JZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JZAddition.h"; sourceTree = "<group>"; };
+		E62D4DDD1FE86849006ADC0D /* UIColor+JZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JZAddition.m"; sourceTree = "<group>"; };
+		E66B6E1B1FD85FDA00AC80FC /* JZWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66B6E1F1FD85FDA00AC80FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E66B6E211FD85FDA00AC80FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		E66B6E221FD85FDA00AC80FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E66B6E2D1FD85FDA00AC80FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E66B6E2F1FD85FDA00AC80FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E66B6E181FD85FDA00AC80FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD75DA2BD4AA7EBA6C6E84E8 /* libPods-JZWaiMai.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		718472128D985276E126E067 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85EF6B88780C22E235487956 /* Pods-JZWaiMai.debug.xcconfig */,
+				641EFB0945A304FAE208641A /* Pods-JZWaiMai.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E26AB7D292B87B27C39DB95D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E6F2F20CAF4E7F6DE42687D /* libPods-JZWaiMai.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60457FE1FDE859D00C507A7 /* FoodDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E60458031FDE85E100C507A7 /* JZFoodDetailController.h */,
+				E60458041FDE85E100C507A7 /* JZFoodDetailController.m */,
+			);
+			path = FoodDetail;
+			sourceTree = "<group>";
+		};
+		E60457FF1FDE859D00C507A7 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				E60458001FDE85B600C507A7 /* JZShopController.h */,
+				E60458011FDE85B600C507A7 /* JZShopController.m */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		E60458061FDE8E7700C507A7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E60458071FDE8E9000C507A7 /* JZMainController.h */,
+				E60458081FDE8E9000C507A7 /* JZMainController.m */,
+				E604580A1FDEA4C500C507A7 /* JZBaseController.h */,
+				E604580B1FDEA4C500C507A7 /* JZBaseController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E62D4DCD1FE7EC2F006ADC0D /* ShopComment(评价) */ = {
+			isa = PBXGroup;
+			children = (
+				E62D4DD61FE7EC88006ADC0D /* JZShopCommentViewController.h */,
+				E62D4DD71FE7EC88006ADC0D /* JZShopCommentViewController.m */,
+			);
+			name = "ShopComment(评价)";
+			path = ShopComment;
+			sourceTree = "<group>";
+		};
+		E62D4DCE1FE7EC2F006ADC0D /* ShopInfo(商家) */ = {
+			isa = PBXGroup;
+			children = (
+				E62D4DD31FE7EC7B006ADC0D /* JZShopInfoViewController.h */,
+				E62D4DD41FE7EC7B006ADC0D /* JZShopInfoViewController.m */,
+			);
+			name = "ShopInfo(商家)";
+			path = ShopInfo;
+			sourceTree = "<group>";
+		};
+		E62D4DCF1FE7EC2F006ADC0D /* ShopOrder(点菜) */ = {
+			isa = PBXGroup;
+			children = (
+				E62D4DD01FE7EC6C006ADC0D /* JZShopOrderController.h */,
+				E62D4DD11FE7EC6C006ADC0D /* JZShopOrderController.m */,
+			);
+			name = "ShopOrder(点菜)";
+			path = ShopOrder;
+			sourceTree = "<group>";
+		};
+		E66B6E121FD85FDA00AC80FC = {
+			isa = PBXGroup;
+			children = (
+				E66B6E1D1FD85FDA00AC80FC /* JZWaiMai */,
+				E66B6E1C1FD85FDA00AC80FC /* Products */,
+				718472128D985276E126E067 /* Pods */,
+				E26AB7D292B87B27C39DB95D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E66B6E1C1FD85FDA00AC80FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E66B6E1B1FD85FDA00AC80FC /* JZWaiMai.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E66B6E1D1FD85FDA00AC80FC /* JZWaiMai */ = {
+			isa = PBXGroup;
+			children = (
+				E66B6E361FD8605300AC80FC /* Common */,
+				E66B6E371FD8605300AC80FC /* Libs */,
+				E66B6E351FD8605300AC80FC /* Classes */,
+				E66B6E381FD8605300AC80FC /* Other */,
+				E66B6E1E1FD85FDA00AC80FC /* Supporting Files */,
+				E60457FD1FDE7B3C00C507A7 /* JZWaiMaiPrefixHeader.pch */,
+			);
+			path = JZWaiMai;
+			sourceTree = "<group>";
+		};
+		E66B6E1E1FD85FDA00AC80FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */,
+				E66B6E2C1FD85FDA00AC80FC /* LaunchScreen.storyboard */,
+				E66B6E2F1FD85FDA00AC80FC /* Info.plist */,
+				E66B6E1F1FD85FDA00AC80FC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E66B6E351FD8605300AC80FC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E62D4DCD1FE7EC2F006ADC0D /* ShopComment(评价) */,
+				E62D4DCE1FE7EC2F006ADC0D /* ShopInfo(商家) */,
+				E62D4DCF1FE7EC2F006ADC0D /* ShopOrder(点菜) */,
+				E60458061FDE8E7700C507A7 /* Main */,
+				E60457FF1FDE859D00C507A7 /* Shop */,
+				E60457FE1FDE859D00C507A7 /* FoodDetail */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E66B6E361FD8605300AC80FC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E62D4DDC1FE86849006ADC0D /* UIColor+JZAddition.h */,
+				E62D4DDD1FE86849006ADC0D /* UIColor+JZAddition.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E66B6E371FD8605300AC80FC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		E66B6E381FD8605300AC80FC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E66B6E211FD85FDA00AC80FC /* AppDelegate.h */,
+				E66B6E221FD85FDA00AC80FC /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E66B6E1A1FD85FDA00AC80FC /* JZWaiMai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E66B6E321FD85FDA00AC80FC /* Build configuration list for PBXNativeTarget "JZWaiMai" */;
+			buildPhases = (
+				843CC2DC2548671620554650 /* [CP] Check Pods Manifest.lock */,
+				E66B6E171FD85FDA00AC80FC /* Sources */,
+				E66B6E181FD85FDA00AC80FC /* Frameworks */,
+				E66B6E191FD85FDA00AC80FC /* Resources */,
+				24F09FA24168459EF0B19FF1 /* [CP] Embed Pods Frameworks */,
+				20C9B784B4C4E44604F05FCF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JZWaiMai;
+			productName = JZWaiMai;
+			productReference = E66B6E1B1FD85FDA00AC80FC /* JZWaiMai.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E66B6E131FD85FDA00AC80FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JZ;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Senfor;
+				TargetAttributes = {
+					E66B6E1A1FD85FDA00AC80FC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BX95GQA4FA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E66B6E161FD85FDA00AC80FC /* Build configuration list for PBXProject "JZWaiMai" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E66B6E121FD85FDA00AC80FC;
+			productRefGroup = E66B6E1C1FD85FDA00AC80FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E66B6E1A1FD85FDA00AC80FC /* JZWaiMai */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E66B6E191FD85FDA00AC80FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66B6E2E1FD85FDA00AC80FC /* LaunchScreen.storyboard in Resources */,
+				E66B6E2B1FD85FDA00AC80FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20C9B784B4C4E44604F05FCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JZWaiMai/Pods-JZWaiMai-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24F09FA24168459EF0B19FF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JZWaiMai/Pods-JZWaiMai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843CC2DC2548671620554650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JZWaiMai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E66B6E171FD85FDA00AC80FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E604580C1FDEA4C500C507A7 /* JZBaseController.m in Sources */,
+				E60458021FDE85B600C507A7 /* JZShopController.m in Sources */,
+				E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */,
+				E62D4DDE1FE86849006ADC0D /* UIColor+JZAddition.m in Sources */,
+				E60458091FDE8E9000C507A7 /* JZMainController.m in Sources */,
+				E62D4DD21FE7EC6C006ADC0D /* JZShopOrderController.m in Sources */,
+				E60458051FDE85E100C507A7 /* JZFoodDetailController.m in Sources */,
+				E62D4DD81FE7EC88006ADC0D /* JZShopCommentViewController.m in Sources */,
+				E62D4DD51FE7EC7B006ADC0D /* JZShopInfoViewController.m in Sources */,
+				E66B6E201FD85FDA00AC80FC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E66B6E2C1FD85FDA00AC80FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E66B6E2D1FD85FDA00AC80FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E66B6E301FD85FDA00AC80FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E66B6E311FD85FDA00AC80FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E66B6E331FD85FDA00AC80FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85EF6B88780C22E235487956 /* Pods-JZWaiMai.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BX95GQA4FA;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JZWaiMAi/JZWaiMaiPrefixHeader.pch";
+				INFOPLIST_FILE = JZWaiMai/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OC-Senfor.JZWaiMai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E66B6E341FD85FDA00AC80FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641EFB0945A304FAE208641A /* Pods-JZWaiMai.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BX95GQA4FA;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JZWaiMAi/JZWaiMaiPrefixHeader.pch";
+				INFOPLIST_FILE = JZWaiMai/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OC-Senfor.JZWaiMai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E66B6E161FD85FDA00AC80FC /* Build configuration list for PBXProject "JZWaiMai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66B6E301FD85FDA00AC80FC /* Debug */,
+				E66B6E311FD85FDA00AC80FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E66B6E321FD85FDA00AC80FC /* Build configuration list for PBXNativeTarget "JZWaiMai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66B6E331FD85FDA00AC80FC /* Debug */,
+				E66B6E341FD85FDA00AC80FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E66B6E131FD85FDA00AC80FC /* Project object */;
+}
