@@ -26,6 +26,7 @@
 @property (nonatomic, weak)UIView* shopTagView;
 @property (nonatomic, weak)UIView* yelloStrip;
 @property (nonatomic, strong)JZshopModelInfo* shopModelInfo;
+@property (nonatomic, weak)UIScrollView* shopScoView;
 @end
 
 @implementation JZShopController
@@ -101,9 +102,11 @@
     }];
     UIButton* orderBtn = [self btnAndWithTitleLabel:@"点菜"];
     orderBtn.titleLabel.font = [UIFont boldSystemFontOfSize:14];
-    [self btnAndWithTitleLabel:@"评价"];
-    [self btnAndWithTitleLabel:@"商家"];
-    
+    orderBtn.tag = 0;
+    UIButton* commentBtn = [self btnAndWithTitleLabel:@"评价"];
+    commentBtn.tag = 1;
+    UIButton* shopBtn = [self btnAndWithTitleLabel:@"商家"];
+    shopBtn.tag = 2;
     [shopTagView.subviews mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.offset(0);
     }];
@@ -123,6 +126,11 @@
     }];
     
 }
+// 点击标签按钮的事件
+- (void)tagButtonClick:(UIButton *)sender {
+    // 根据不同的按钮,滑动到不同的位置
+    [self.shopScoView setContentOffset:CGPointMake(sender.tag * self.shopScoView.bounds.size.width, 0) animated:YES];
+}
 #pragma mark -标签菜单按钮
 -(UIButton*)btnAndWithTitleLabel:(NSString*)labTitle{
     UIButton* btn  = [[UIButton alloc]init];
@@ -130,6 +138,7 @@
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [_shopTagView addSubview:btn];
+    [btn addTarget:self action:@selector(tagButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     return btn;
 }
 #pragma mark -滚动视图
@@ -140,7 +149,7 @@
     shopScoView.pagingEnabled = YES;
     shopScoView.showsVerticalScrollIndicator = NO;
     shopScoView.showsHorizontalScrollIndicator = NO;
-//    _shopScoView = shopScoView;
+    _shopScoView = shopScoView;
     [self.view addSubview:shopScoView];
     
     [shopScoView mas_makeConstraints:^(MASConstraintMaker *make) {
