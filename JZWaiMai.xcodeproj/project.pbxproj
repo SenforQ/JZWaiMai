@@ -18,6 +18,7 @@
 		E62D4DE01FE9199A006ADC0D /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = E62D4DDF1FE9199A006ADC0D /* food.json */; };
 		E62D4DE61FE91EE9006ADC0D /* JZShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DE31FE91EE9006ADC0D /* JZShopController.m */; };
 		E62D4DE91FE91F11006ADC0D /* JZshopModelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */; };
+		E62D4DEC1FE92F0B006ADC0D /* JZHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DEB1FE92F0B006ADC0D /* JZHeaderView.m */; };
 		E66B6E201FD85FDA00AC80FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E1F1FD85FDA00AC80FC /* main.m */; };
 		E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E221FD85FDA00AC80FC /* AppDelegate.m */; };
 		E66B6E2B1FD85FDA00AC80FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		E62D4DE31FE91EE9006ADC0D /* JZShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopController.m; sourceTree = "<group>"; };
 		E62D4DE71FE91F11006ADC0D /* JZshopModelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZshopModelInfo.h; sourceTree = "<group>"; };
 		E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZshopModelInfo.m; sourceTree = "<group>"; };
+		E62D4DEA1FE92F0B006ADC0D /* JZHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZHeaderView.h; sourceTree = "<group>"; };
+		E62D4DEB1FE92F0B006ADC0D /* JZHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZHeaderView.m; sourceTree = "<group>"; };
 		E66B6E1B1FD85FDA00AC80FC /* JZWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66B6E1F1FD85FDA00AC80FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E66B6E211FD85FDA00AC80FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 		E62D4DE51FE91EE9006ADC0D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E62D4DEA1FE92F0B006ADC0D /* JZHeaderView.h */,
+				E62D4DEB1FE92F0B006ADC0D /* JZHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E604580C1FDEA4C500C507A7 /* JZBaseController.m in Sources */,
+				E62D4DEC1FE92F0B006ADC0D /* JZHeaderView.m in Sources */,
 				E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */,
 				E62D4DDE1FE86849006ADC0D /* UIColor+JZAddition.m in Sources */,
 				E60458091FDE8E9000C507A7 /* JZMainController.m in Sources */,

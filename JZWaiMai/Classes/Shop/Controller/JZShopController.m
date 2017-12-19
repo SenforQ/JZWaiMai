@@ -13,27 +13,28 @@
 #import "JZShopOrderController.h"
 #import "UIColor+JZAddition.h"
 #import "JZshopModelInfo.h"
+#import "JZHeaderView.h"
+
 #define KShopHeaderViewMaxH 180 //商店头视图最高
 #define KshopHeaderViewMinH 64  //商品头视图最低
 
 
 @interface JZShopController () <UIScrollViewDelegate>
-@property (nonatomic, weak)UIView* headerView;
+@property (nonatomic, strong)JZHeaderView* headerView;
 @property (nonatomic, weak)UIView* shopTagView;
 @property (nonatomic, weak)UIView* yelloStrip;
+@property (nonatomic, strong)JZshopModelInfo* shopModelInfo;
 @end
 
 @implementation JZShopController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+
     [self loadData];
     
     self.navTitle.title = @"123";
-    
-    
+
     //实现创建头视图方法。
     [self setUI];
     
@@ -52,10 +53,11 @@
 }
 #pragma mark -头视图
 -(void)settingHeaderView{
-    UIView* headerView = [[UIView alloc]init];
+    JZHeaderView* headerView = [[JZHeaderView alloc]init];
     headerView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:headerView];
     _headerView = headerView;
+    _headerView.shopModelInfo = _shopModelInfo;
     //添加约束
     [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.offset(0);
@@ -69,6 +71,7 @@
     
     //给导航条添加右边按钮
     self.navTitle.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_share"] style:UIBarButtonItemStylePlain target:nil action:nil];
+
 }
 #pragma mark -标签视图
 -(void)settingTagView{
@@ -212,7 +215,9 @@
     NSDictionary* poi_infoDict = JSONDict[@"data"][@"poi_info"];
     
     JZshopModelInfo* model_info = [JZshopModelInfo shopModelWithDict:poi_infoDict];
-
+    
+    _shopModelInfo = model_info;
+    
     NSLog(@"%@",model_info.poi_back_pic_url);
 }
 @end
