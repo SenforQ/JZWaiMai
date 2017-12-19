@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BD75DA2BD4AA7EBA6C6E84E8 /* libPods-JZWaiMai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6F2F20CAF4E7F6DE42687D /* libPods-JZWaiMai.a */; };
-		E60458021FDE85B600C507A7 /* JZShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60458011FDE85B600C507A7 /* JZShopController.m */; };
 		E60458051FDE85E100C507A7 /* JZFoodDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60458041FDE85E100C507A7 /* JZFoodDetailController.m */; };
 		E60458091FDE8E9000C507A7 /* JZMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60458081FDE8E9000C507A7 /* JZMainController.m */; };
 		E604580C1FDEA4C500C507A7 /* JZBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = E604580B1FDEA4C500C507A7 /* JZBaseController.m */; };
@@ -16,6 +15,9 @@
 		E62D4DD51FE7EC7B006ADC0D /* JZShopInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DD41FE7EC7B006ADC0D /* JZShopInfoViewController.m */; };
 		E62D4DD81FE7EC88006ADC0D /* JZShopCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DD71FE7EC88006ADC0D /* JZShopCommentViewController.m */; };
 		E62D4DDE1FE86849006ADC0D /* UIColor+JZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DDD1FE86849006ADC0D /* UIColor+JZAddition.m */; };
+		E62D4DE01FE9199A006ADC0D /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = E62D4DDF1FE9199A006ADC0D /* food.json */; };
+		E62D4DE61FE91EE9006ADC0D /* JZShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DE31FE91EE9006ADC0D /* JZShopController.m */; };
+		E62D4DE91FE91F11006ADC0D /* JZshopModelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */; };
 		E66B6E201FD85FDA00AC80FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E1F1FD85FDA00AC80FC /* main.m */; };
 		E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E221FD85FDA00AC80FC /* AppDelegate.m */; };
 		E66B6E2B1FD85FDA00AC80FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */; };
@@ -27,8 +29,6 @@
 		641EFB0945A304FAE208641A /* Pods-JZWaiMai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZWaiMai.release.xcconfig"; path = "Pods/Target Support Files/Pods-JZWaiMai/Pods-JZWaiMai.release.xcconfig"; sourceTree = "<group>"; };
 		85EF6B88780C22E235487956 /* Pods-JZWaiMai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZWaiMai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JZWaiMai/Pods-JZWaiMai.debug.xcconfig"; sourceTree = "<group>"; };
 		E60457FD1FDE7B3C00C507A7 /* JZWaiMaiPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZWaiMaiPrefixHeader.pch; sourceTree = "<group>"; };
-		E60458001FDE85B600C507A7 /* JZShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopController.h; sourceTree = "<group>"; };
-		E60458011FDE85B600C507A7 /* JZShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopController.m; sourceTree = "<group>"; };
 		E60458031FDE85E100C507A7 /* JZFoodDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFoodDetailController.h; sourceTree = "<group>"; };
 		E60458041FDE85E100C507A7 /* JZFoodDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFoodDetailController.m; sourceTree = "<group>"; };
 		E60458071FDE8E9000C507A7 /* JZMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainController.h; sourceTree = "<group>"; };
@@ -43,6 +43,11 @@
 		E62D4DD71FE7EC88006ADC0D /* JZShopCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopCommentViewController.m; sourceTree = "<group>"; };
 		E62D4DDC1FE86849006ADC0D /* UIColor+JZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JZAddition.h"; sourceTree = "<group>"; };
 		E62D4DDD1FE86849006ADC0D /* UIColor+JZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JZAddition.m"; sourceTree = "<group>"; };
+		E62D4DDF1FE9199A006ADC0D /* food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
+		E62D4DE21FE91EE9006ADC0D /* JZShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopController.h; sourceTree = "<group>"; };
+		E62D4DE31FE91EE9006ADC0D /* JZShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopController.m; sourceTree = "<group>"; };
+		E62D4DE71FE91F11006ADC0D /* JZshopModelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZshopModelInfo.h; sourceTree = "<group>"; };
+		E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZshopModelInfo.m; sourceTree = "<group>"; };
 		E66B6E1B1FD85FDA00AC80FC /* JZWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66B6E1F1FD85FDA00AC80FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E66B6E211FD85FDA00AC80FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -93,8 +98,9 @@
 		E60457FF1FDE859D00C507A7 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
-				E60458001FDE85B600C507A7 /* JZShopController.h */,
-				E60458011FDE85B600C507A7 /* JZShopController.m */,
+				E62D4DE11FE91EE9006ADC0D /* Controller */,
+				E62D4DE41FE91EE9006ADC0D /* Model */,
+				E62D4DE51FE91EE9006ADC0D /* View */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -138,6 +144,31 @@
 			);
 			name = "ShopOrder(点菜)";
 			path = ShopOrder;
+			sourceTree = "<group>";
+		};
+		E62D4DE11FE91EE9006ADC0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E62D4DE21FE91EE9006ADC0D /* JZShopController.h */,
+				E62D4DE31FE91EE9006ADC0D /* JZShopController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E62D4DE41FE91EE9006ADC0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E62D4DE71FE91F11006ADC0D /* JZshopModelInfo.h */,
+				E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E62D4DE51FE91EE9006ADC0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E66B6E121FD85FDA00AC80FC = {
@@ -214,6 +245,7 @@
 		E66B6E381FD8605300AC80FC /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E62D4DDF1FE9199A006ADC0D /* food.json */,
 				E66B6E211FD85FDA00AC80FC /* AppDelegate.h */,
 				E66B6E221FD85FDA00AC80FC /* AppDelegate.m */,
 			);
@@ -283,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62D4DE01FE9199A006ADC0D /* food.json in Resources */,
 				E66B6E2E1FD85FDA00AC80FC /* LaunchScreen.storyboard in Resources */,
 				E66B6E2B1FD85FDA00AC80FC /* Assets.xcassets in Resources */,
 			);
@@ -347,14 +380,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E604580C1FDEA4C500C507A7 /* JZBaseController.m in Sources */,
-				E60458021FDE85B600C507A7 /* JZShopController.m in Sources */,
 				E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */,
 				E62D4DDE1FE86849006ADC0D /* UIColor+JZAddition.m in Sources */,
 				E60458091FDE8E9000C507A7 /* JZMainController.m in Sources */,
 				E62D4DD21FE7EC6C006ADC0D /* JZShopOrderController.m in Sources */,
 				E60458051FDE85E100C507A7 /* JZFoodDetailController.m in Sources */,
 				E62D4DD81FE7EC88006ADC0D /* JZShopCommentViewController.m in Sources */,
+				E62D4DE61FE91EE9006ADC0D /* JZShopController.m in Sources */,
 				E62D4DD51FE7EC7B006ADC0D /* JZShopInfoViewController.m in Sources */,
+				E62D4DE91FE91F11006ADC0D /* JZshopModelInfo.m in Sources */,
 				E66B6E201FD85FDA00AC80FC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
