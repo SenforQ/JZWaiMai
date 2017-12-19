@@ -69,6 +69,11 @@
     //4，添加头像
     UIImageView* iconView = [[UIImageView alloc]init];
     iconView.backgroundColor = [UIColor blackColor];
+    iconView.layer.masksToBounds = YES;
+    iconView.layer.cornerRadius = 20;
+    iconView.layer.borderColor = [UIColor colorWithWhite:1 alpha:0.9].CGColor;
+    iconView.layer.borderWidth = 2;
+    
     [self addSubview:iconView];
     [iconView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.offset(16);
@@ -77,8 +82,10 @@
     }];
     
     //5，添加店名
-    UIView* shopNameView = [[UIView alloc]init];
-    shopNameView.backgroundColor = [UIColor whiteColor];
+    UILabel* shopNameView = [[UILabel alloc]init];
+    shopNameView.text = @"良心发现";
+    shopNameView.font  = [UIFont systemFontOfSize:14];
+    shopNameView.textColor = [UIColor blackColor];
     [self addSubview:shopNameView];
     [shopNameView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(iconView.mas_right).offset(15);
@@ -87,7 +94,7 @@
         make.bottom.equalTo(iconView.mas_bottom).offset(-10);
     }];
 }
-
+//添加模型修改数据
 -(void)setShopModelInfo:(JZshopModelInfo *)shopModelInfo{
     _shopModelInfo = shopModelInfo;
     [_backImageView sd_setImageWithURL:[NSURL URLWithString:[shopModelInfo.poi_back_pic_url stringByDeletingPathExtension]]];

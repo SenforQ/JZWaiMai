@@ -24,7 +24,7 @@
     [super pushViewController:viewController animated:YES];
     
     if (self.childViewControllers.count > 1) {
-        ((JZBaseController*)viewController).navTitle.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"btn_backItem"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+        ((JZBaseController*)viewController).navItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"btn_backItem"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     }
 }
 

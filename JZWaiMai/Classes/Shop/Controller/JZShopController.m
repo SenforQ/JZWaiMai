@@ -12,11 +12,13 @@
 #import "JZShopInfoViewController.h"
 #import "JZShopOrderController.h"
 #import "UIColor+JZAddition.h"
+#import "NSObject+Formula.h"
 #import "JZshopModelInfo.h"
 #import "JZHeaderView.h"
 
 #define KShopHeaderViewMaxH 180 //商店头视图最高
 #define KshopHeaderViewMinH 64  //商品头视图最低
+#define kGrayColor 96 / 255.0
 
 
 @interface JZShopController () <UIScrollViewDelegate>
@@ -33,7 +35,22 @@
 
     [self loadData];
     
-    self.navTitle.title = @"123";
+    
+    self.navItem.title = @"香河肉饼";
+    // 右上角分享按钮
+    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_share"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navItem.rightBarButtonItem = shareItem;
+    // 右上角分享按钮默认颜色
+    self.navBar.tintColor = [UIColor whiteColor];
+    
+    // 设置初始导航条的背景透明度
+    self.navBar.backgroundView.alpha = 0;
+    // 设置初始标题的颜色为透明的
+    [self.navBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor clearColor]}];
+    
+    // 默认的状态栏的样式
+    self.statusBarStyle = UIStatusBarStyleLightContent;
+    
 
     //实现创建头视图方法。
     [self setUI];
@@ -68,9 +85,6 @@
     UIPanGestureRecognizer* pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGesture:)];
     
     [self.view addGestureRecognizer:pan];
-    
-    //给导航条添加右边按钮
-    self.navTitle.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_share"] style:UIBarButtonItemStylePlain target:nil action:nil];
 
 }
 #pragma mark -标签视图
@@ -177,6 +191,7 @@
         make.height.offset(p.y + _headerView.bounds.size.height);
         }
     }];
+    [self updateUI];
     //让平移量复位
     [pan setTranslation:CGPointZero inView:pan.view];
 }
@@ -219,5 +234,41 @@
     _shopModelInfo = model_info;
     
     NSLog(@"%@",model_info.poi_back_pic_url);
+}
+#pragma mark -更新导航条
+// 更新最新的效果
+- (void)updateUI {
+    // 高度 64 透明度 1
+    // 高度 180 透明度 0
+    // 高度 100 透明度 ?
+    
+    // y = a * x + b
+    
+    // 1 = a * 64 + b
+    // 0 = a * 180 + b
+    // 1 = -116 * a
+    // a = 1 / -116
+    // b = 0 -(1 / -116) * 180
+    // y = (1 / -116) * x + (0 -(1 / -116) * 180)
+    //    CGFloat barAlpha = (1 / -116.0) * self.shopHeaderView.bounds.size.height + (0 -(1 / -116.0) * 180);
+    
+    // 根据手势计算bar和文字的透明度
+    CGFloat barAlpha = [@(self.headerView.bounds.size.height) calcResultWithValue1:JZValueMake(KshopHeaderViewMinH, 1) andValue2:JZValueMake(KShopHeaderViewMaxH, 0)];
+    
+    // 设置bar的透明度
+    self.navBar.backgroundView.alpha = barAlpha;
+    // 设置标题的透明度
+    [self.navBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithWhite:kGrayColor alpha:barAlpha]}];
+    
+    // 计算灰度
+    CGFloat gray = [@(self.headerView.bounds.size.height) calcResultWithValue1:JZValueMake(KShopHeaderViewMaxH, 1) andValue2:JZValueMake(KshopHeaderViewMinH, kGrayColor)];
+    self.navBar.tintColor = [UIColor colorWithWhite:gray alpha:1];
+    
+    
+    if (self.headerView.bounds.size.height == 64) { // 高度64的时候 用黑色
+        self.statusBarStyle = UIStatusBarStyleDefault;
+    } else { // 不是64的时候 使用白色
+        self.statusBarStyle = UIStatusBarStyleLightContent;
+    }
 }
 @end

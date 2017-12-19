@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JZNavigationBar.h"
 @interface JZBaseController : UIViewController
 
-@property (nonatomic, strong, readonly)UINavigationBar* navb;
-@property (nonatomic, strong, readonly)UINavigationItem* navTitle;
+
+@property (nonatomic, strong, readonly)UINavigationItem* navItem;
+@property (nonatomic, strong, readonly)JZNavigationBar* navBar;
+@property(assign, nonatomic) UIStatusBarStyle statusBarStyle;
 
 @end

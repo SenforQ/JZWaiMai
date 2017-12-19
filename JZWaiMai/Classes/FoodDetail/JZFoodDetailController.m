@@ -19,8 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blueColor];
-    self.navb.backgroundColor = [UIColor lightGrayColor];
-    self.navTitle.title = @"红烧肉";
+    self.navBar.backgroundColor = [UIColor lightGrayColor];
+    self.navItem.title = @"红烧肉";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -19,6 +19,8 @@
 		E62D4DE61FE91EE9006ADC0D /* JZShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DE31FE91EE9006ADC0D /* JZShopController.m */; };
 		E62D4DE91FE91F11006ADC0D /* JZshopModelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */; };
 		E62D4DEC1FE92F0B006ADC0D /* JZHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DEB1FE92F0B006ADC0D /* JZHeaderView.m */; };
+		E62D4DEF1FE9A485006ADC0D /* JZNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DEE1FE9A485006ADC0D /* JZNavigationBar.m */; };
+		E62D4DF21FE9A8B4006ADC0D /* NSObject+Formula.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DF11FE9A8B4006ADC0D /* NSObject+Formula.m */; };
 		E66B6E201FD85FDA00AC80FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E1F1FD85FDA00AC80FC /* main.m */; };
 		E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E221FD85FDA00AC80FC /* AppDelegate.m */; };
 		E66B6E2B1FD85FDA00AC80FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */; };
@@ -51,6 +53,10 @@
 		E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZshopModelInfo.m; sourceTree = "<group>"; };
 		E62D4DEA1FE92F0B006ADC0D /* JZHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZHeaderView.h; sourceTree = "<group>"; };
 		E62D4DEB1FE92F0B006ADC0D /* JZHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZHeaderView.m; sourceTree = "<group>"; };
+		E62D4DED1FE9A485006ADC0D /* JZNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZNavigationBar.h; sourceTree = "<group>"; };
+		E62D4DEE1FE9A485006ADC0D /* JZNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZNavigationBar.m; sourceTree = "<group>"; };
+		E62D4DF01FE9A8B4006ADC0D /* NSObject+Formula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Formula.h"; sourceTree = "<group>"; };
+		E62D4DF11FE9A8B4006ADC0D /* NSObject+Formula.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Formula.m"; sourceTree = "<group>"; };
 		E66B6E1B1FD85FDA00AC80FC /* JZWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66B6E1F1FD85FDA00AC80FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E66B6E211FD85FDA00AC80FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +121,8 @@
 				E60458081FDE8E9000C507A7 /* JZMainController.m */,
 				E604580A1FDEA4C500C507A7 /* JZBaseController.h */,
 				E604580B1FDEA4C500C507A7 /* JZBaseController.m */,
+				E62D4DED1FE9A485006ADC0D /* JZNavigationBar.h */,
+				E62D4DEE1FE9A485006ADC0D /* JZNavigationBar.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -236,6 +244,8 @@
 			children = (
 				E62D4DDC1FE86849006ADC0D /* UIColor+JZAddition.h */,
 				E62D4DDD1FE86849006ADC0D /* UIColor+JZAddition.m */,
+				E62D4DF01FE9A8B4006ADC0D /* NSObject+Formula.h */,
+				E62D4DF11FE9A8B4006ADC0D /* NSObject+Formula.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -384,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62D4DF21FE9A8B4006ADC0D /* NSObject+Formula.m in Sources */,
 				E604580C1FDEA4C500C507A7 /* JZBaseController.m in Sources */,
 				E62D4DEC1FE92F0B006ADC0D /* JZHeaderView.m in Sources */,
 				E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */,
@@ -393,6 +404,7 @@
 				E60458051FDE85E100C507A7 /* JZFoodDetailController.m in Sources */,
 				E62D4DD81FE7EC88006ADC0D /* JZShopCommentViewController.m in Sources */,
 				E62D4DE61FE91EE9006ADC0D /* JZShopController.m in Sources */,
+				E62D4DEF1FE9A485006ADC0D /* JZNavigationBar.m in Sources */,
 				E62D4DD51FE7EC7B006ADC0D /* JZShopInfoViewController.m in Sources */,
 				E62D4DE91FE91F11006ADC0D /* JZshopModelInfo.m in Sources */,
 				E66B6E201FD85FDA00AC80FC /* main.m in Sources */,
