@@ -212,8 +212,7 @@
     NSDictionary* poi_infoDict = JSONDict[@"data"][@"poi_info"];
     
     JZshopModelInfo* model_info = [JZshopModelInfo shopModelWithDict:poi_infoDict];
-    
-    NSLog(@"%@",poi_infoDict);
+
     NSLog(@"%@",model_info.poi_back_pic_url);
 }
 @end
