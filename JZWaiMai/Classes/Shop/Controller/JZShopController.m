@@ -27,6 +27,7 @@
 @property (nonatomic, weak)UIView* yelloStrip;
 @property (nonatomic, strong)JZshopModelInfo* shopModelInfo;
 @property (nonatomic, weak)UIScrollView* shopScoView;
+
 @end
 
 @implementation JZShopController
@@ -129,6 +130,14 @@
 // 点击标签按钮的事件
 - (void)tagButtonClick:(UIButton *)sender {
     // 根据不同的按钮,滑动到不同的位置
+//    int temptag = _shopScoView.contentOffset.x / _shopScoView.bounds.size.width;
+    for (int i = 0 ; i < _shopTagView.subviews.count; i++) {
+        UIButton* btn = _shopTagView.subviews[i];
+        if ([btn isKindOfClass:[UIButton class]]) {
+            btn.titleLabel.font = [UIFont systemFontOfSize:14];
+        }
+    }
+    sender.titleLabel.font  = [UIFont boldSystemFontOfSize:14];
     [self.shopScoView setContentOffset:CGPointMake(sender.tag * self.shopScoView.bounds.size.width, 0) animated:YES];
 }
 #pragma mark -标签菜单按钮
@@ -242,7 +251,7 @@
     
     _shopModelInfo = model_info;
     
-    NSLog(@"%@",model_info.poi_back_pic_url);
+//    NSLog(@"%@",model_info.discounts);
 }
 #pragma mark -更新导航条
 // 更新最新的效果

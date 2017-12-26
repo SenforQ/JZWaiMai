@@ -21,10 +21,19 @@
 		E62D4DEC1FE92F0B006ADC0D /* JZHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DEB1FE92F0B006ADC0D /* JZHeaderView.m */; };
 		E62D4DEF1FE9A485006ADC0D /* JZNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DEE1FE9A485006ADC0D /* JZNavigationBar.m */; };
 		E62D4DF21FE9A8B4006ADC0D /* NSObject+Formula.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DF11FE9A8B4006ADC0D /* NSObject+Formula.m */; };
+		E62D4DF51FE9BCC9006ADC0D /* UIImage+JZDashLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E62D4DF41FE9BCC9006ADC0D /* UIImage+JZDashLine.m */; };
+		E65209071FEAC9CC0051D938 /* JZshopDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = E65209061FEAC9CC0051D938 /* JZshopDiscount.m */; };
+		E652090B1FEAD8B90051D938 /* JZinfoLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E652090A1FEAD8B90051D938 /* JZinfoLoopView.m */; };
+		E652090E1FEAE0A90051D938 /* JZinfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E652090D1FEAE0A90051D938 /* JZinfoModel.m */; };
 		E66B6E201FD85FDA00AC80FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E1F1FD85FDA00AC80FC /* main.m */; };
 		E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B6E221FD85FDA00AC80FC /* AppDelegate.m */; };
 		E66B6E2B1FD85FDA00AC80FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */; };
 		E66B6E2E1FD85FDA00AC80FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66B6E2C1FD85FDA00AC80FC /* LaunchScreen.storyboard */; };
+		E6A564F11FEEF4180061AE97 /* UIView+JZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A564F01FEEF4180061AE97 /* UIView+JZAddition.m */; };
+		E6A564F81FEF84670061AE97 /* UILabel+JZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A564F71FEF84670061AE97 /* UILabel+JZAddition.m */; };
+		E6A564FD1FF1A11E0061AE97 /* JZShopDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A564FB1FF1A11E0061AE97 /* JZShopDetailController.m */; };
+		E6A565001FF1A1F00061AE97 /* JZShopDetailAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A564FF1FF1A1F00061AE97 /* JZShopDetailAnimator.m */; };
+		E6AA8F601FED925600870C16 /* JZinfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA8F5F1FED925600870C16 /* JZinfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +66,14 @@
 		E62D4DEE1FE9A485006ADC0D /* JZNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZNavigationBar.m; sourceTree = "<group>"; };
 		E62D4DF01FE9A8B4006ADC0D /* NSObject+Formula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Formula.h"; sourceTree = "<group>"; };
 		E62D4DF11FE9A8B4006ADC0D /* NSObject+Formula.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Formula.m"; sourceTree = "<group>"; };
+		E62D4DF31FE9BCC9006ADC0D /* UIImage+JZDashLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JZDashLine.h"; sourceTree = "<group>"; };
+		E62D4DF41FE9BCC9006ADC0D /* UIImage+JZDashLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JZDashLine.m"; sourceTree = "<group>"; };
+		E65209051FEAC9CC0051D938 /* JZshopDiscount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZshopDiscount.h; sourceTree = "<group>"; };
+		E65209061FEAC9CC0051D938 /* JZshopDiscount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZshopDiscount.m; sourceTree = "<group>"; };
+		E65209091FEAD8B90051D938 /* JZinfoLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZinfoLoopView.h; sourceTree = "<group>"; };
+		E652090A1FEAD8B90051D938 /* JZinfoLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZinfoLoopView.m; sourceTree = "<group>"; };
+		E652090C1FEAE0A90051D938 /* JZinfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZinfoModel.h; sourceTree = "<group>"; };
+		E652090D1FEAE0A90051D938 /* JZinfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZinfoModel.m; sourceTree = "<group>"; };
 		E66B6E1B1FD85FDA00AC80FC /* JZWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66B6E1F1FD85FDA00AC80FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E66B6E211FD85FDA00AC80FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +81,16 @@
 		E66B6E2A1FD85FDA00AC80FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66B6E2D1FD85FDA00AC80FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E66B6E2F1FD85FDA00AC80FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A564EF1FEEF4180061AE97 /* UIView+JZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JZAddition.h"; sourceTree = "<group>"; };
+		E6A564F01FEEF4180061AE97 /* UIView+JZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JZAddition.m"; sourceTree = "<group>"; };
+		E6A564F61FEF84670061AE97 /* UILabel+JZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JZAddition.h"; sourceTree = "<group>"; };
+		E6A564F71FEF84670061AE97 /* UILabel+JZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JZAddition.m"; sourceTree = "<group>"; };
+		E6A564FA1FF1A11E0061AE97 /* JZShopDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopDetailController.h; sourceTree = "<group>"; };
+		E6A564FB1FF1A11E0061AE97 /* JZShopDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopDetailController.m; sourceTree = "<group>"; };
+		E6A564FE1FF1A1F00061AE97 /* JZShopDetailAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZShopDetailAnimator.h; sourceTree = "<group>"; };
+		E6A564FF1FF1A1F00061AE97 /* JZShopDetailAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZShopDetailAnimator.m; sourceTree = "<group>"; };
+		E6AA8F5E1FED925600870C16 /* JZinfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZinfoView.h; sourceTree = "<group>"; };
+		E6AA8F5F1FED925600870C16 /* JZinfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZinfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +198,8 @@
 			children = (
 				E62D4DE71FE91F11006ADC0D /* JZshopModelInfo.h */,
 				E62D4DE81FE91F11006ADC0D /* JZshopModelInfo.m */,
+				E65209051FEAC9CC0051D938 /* JZshopDiscount.h */,
+				E65209061FEAC9CC0051D938 /* JZshopDiscount.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +211,19 @@
 				E62D4DEB1FE92F0B006ADC0D /* JZHeaderView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E65209081FEAD8790051D938 /* LoopView */ = {
+			isa = PBXGroup;
+			children = (
+				E65209091FEAD8B90051D938 /* JZinfoLoopView.h */,
+				E652090A1FEAD8B90051D938 /* JZinfoLoopView.m */,
+				E6AA8F5E1FED925600870C16 /* JZinfoView.h */,
+				E6AA8F5F1FED925600870C16 /* JZinfoView.m */,
+				E652090C1FEAE0A90051D938 /* JZinfoModel.h */,
+				E652090D1FEAE0A90051D938 /* JZinfoModel.m */,
+			);
+			path = LoopView;
 			sourceTree = "<group>";
 		};
 		E66B6E121FD85FDA00AC80FC = {
@@ -235,6 +277,7 @@
 				E60458061FDE8E7700C507A7 /* Main */,
 				E60457FF1FDE859D00C507A7 /* Shop */,
 				E60457FE1FDE859D00C507A7 /* FoodDetail */,
+				E6A564F21FEEF6C40061AE97 /* ShopDetail */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -246,6 +289,12 @@
 				E62D4DDD1FE86849006ADC0D /* UIColor+JZAddition.m */,
 				E62D4DF01FE9A8B4006ADC0D /* NSObject+Formula.h */,
 				E62D4DF11FE9A8B4006ADC0D /* NSObject+Formula.m */,
+				E62D4DF31FE9BCC9006ADC0D /* UIImage+JZDashLine.h */,
+				E62D4DF41FE9BCC9006ADC0D /* UIImage+JZDashLine.m */,
+				E6A564EF1FEEF4180061AE97 /* UIView+JZAddition.h */,
+				E6A564F01FEEF4180061AE97 /* UIView+JZAddition.m */,
+				E6A564F61FEF84670061AE97 /* UILabel+JZAddition.h */,
+				E6A564F71FEF84670061AE97 /* UILabel+JZAddition.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -253,6 +302,7 @@
 		E66B6E371FD8605300AC80FC /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				E65209081FEAD8790051D938 /* LoopView */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -263,6 +313,33 @@
 				E62D4DDF1FE9199A006ADC0D /* food.json */,
 				E66B6E211FD85FDA00AC80FC /* AppDelegate.h */,
 				E66B6E221FD85FDA00AC80FC /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E6A564F21FEEF6C40061AE97 /* ShopDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E6A564F91FF1A11E0061AE97 /* Controller */,
+				E6A564FC1FF1A11E0061AE97 /* Other */,
+			);
+			path = ShopDetail;
+			sourceTree = "<group>";
+		};
+		E6A564F91FF1A11E0061AE97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6A564FA1FF1A11E0061AE97 /* JZShopDetailController.h */,
+				E6A564FB1FF1A11E0061AE97 /* JZShopDetailController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E6A564FC1FF1A11E0061AE97 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E6A564FE1FF1A1F00061AE97 /* JZShopDetailAnimator.h */,
+				E6A564FF1FF1A1F00061AE97 /* JZShopDetailAnimator.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -396,18 +473,27 @@
 			files = (
 				E62D4DF21FE9A8B4006ADC0D /* NSObject+Formula.m in Sources */,
 				E604580C1FDEA4C500C507A7 /* JZBaseController.m in Sources */,
+				E65209071FEAC9CC0051D938 /* JZshopDiscount.m in Sources */,
+				E62D4DF51FE9BCC9006ADC0D /* UIImage+JZDashLine.m in Sources */,
 				E62D4DEC1FE92F0B006ADC0D /* JZHeaderView.m in Sources */,
 				E66B6E231FD85FDA00AC80FC /* AppDelegate.m in Sources */,
 				E62D4DDE1FE86849006ADC0D /* UIColor+JZAddition.m in Sources */,
+				E652090B1FEAD8B90051D938 /* JZinfoLoopView.m in Sources */,
 				E60458091FDE8E9000C507A7 /* JZMainController.m in Sources */,
 				E62D4DD21FE7EC6C006ADC0D /* JZShopOrderController.m in Sources */,
+				E6A565001FF1A1F00061AE97 /* JZShopDetailAnimator.m in Sources */,
 				E60458051FDE85E100C507A7 /* JZFoodDetailController.m in Sources */,
 				E62D4DD81FE7EC88006ADC0D /* JZShopCommentViewController.m in Sources */,
+				E6A564F81FEF84670061AE97 /* UILabel+JZAddition.m in Sources */,
 				E62D4DE61FE91EE9006ADC0D /* JZShopController.m in Sources */,
 				E62D4DEF1FE9A485006ADC0D /* JZNavigationBar.m in Sources */,
 				E62D4DD51FE7EC7B006ADC0D /* JZShopInfoViewController.m in Sources */,
+				E6AA8F601FED925600870C16 /* JZinfoView.m in Sources */,
 				E62D4DE91FE91F11006ADC0D /* JZshopModelInfo.m in Sources */,
 				E66B6E201FD85FDA00AC80FC /* main.m in Sources */,
+				E6A564F11FEEF4180061AE97 /* UIView+JZAddition.m in Sources */,
+				E6A564FD1FF1A11E0061AE97 /* JZShopDetailController.m in Sources */,
+				E652090E1FEAE0A90051D938 /* JZinfoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +529,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -490,6 +577,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
