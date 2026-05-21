@@ -1,0 +1,38 @@
+# 可单独作为 rule-provider 引用的 PayPal 直连规则集
+# 在 config.yaml 的 rule-providers 中加入：
+#
+#   paypal-direct:
+#     type: file
+#     behavior: classical
+#     path: ./paypal-direct.yaml
+#
+# 在 rules 最前面加入：
+#   - RULE-SET,paypal-direct,DIRECT
+
+payload:
+  # 主域名
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypal.cn
+  - DOMAIN-SUFFIX,paypal.me
+  - DOMAIN-SUFFIX,paypalobjects.com
+  - DOMAIN-SUFFIX,paypalinc.com
+  - DOMAIN-SUFFIX,paypalcorp.com
+  - DOMAIN-SUFFIX,paypal-status.com
+  - DOMAIN-SUFFIX,paypal-community.com
+  - DOMAIN-SUFFIX,paypal-community.cn
+  - DOMAIN-SUFFIX,paypalhere.com
+  - DOMAIN-SUFFIX,paypalhere.cn
+  # 关联支付
+  - DOMAIN-SUFFIX,venmo.com
+  - DOMAIN-SUFFIX,braintreegateway.com
+  - DOMAIN-SUFFIX,braintree-api.com
+  - DOMAIN-SUFFIX,braintreepayments.com
+  - DOMAIN-SUFFIX,hyperwallet.com
+  - DOMAIN-SUFFIX,xoom.com
+  - DOMAIN-SUFFIX,swiftfinancial.com
+  - DOMAIN-SUFFIX,zettle.com
+  - DOMAIN-SUFFIX,izettle.com
+  # 关键词兜底（覆盖未列出的子域）
+  - DOMAIN-KEYWORD,paypal
+  - DOMAIN-KEYWORD,braintree
+  - DOMAIN-KEYWORD,venmo
